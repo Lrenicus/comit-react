@@ -19,13 +19,13 @@ family[1] = "Mom";
 
 console.log(family);
 
-var i;
+let i;
 for (let i = 0; i < family.length; i++) {
 
     console.log(family[i]);
 }
 
-var a;
+let a;
 for (a of family) {
     console.log(a);
 }
@@ -33,7 +33,7 @@ for (a of family) {
 //extra exercise
 //recipe card
 
-var favRecipe = {
+let favRecipe = {
     title: 'Mole',
     servings: 2,
     ingredients: ["cinnamon", "cumin", "cocoa"],
@@ -42,7 +42,7 @@ var favRecipe = {
 console.log(favRecipe.title);
 console.log('serves: ${favRecipe.servings}');
 console.log('ingredients:');
-var r
+let r;
 for (r of favRecipe.ingredients) {
     console.log(r);
 }
@@ -75,7 +75,10 @@ for (let b = 0; b < books.length; b++) {
 //(Difficult) - Recreate the array.map function. Complete the following code
 
 function map(arr, func) {
-    var newArr = arr.map(func);
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(func(arr[i]));
+    }
     return newArr;
   };
   
