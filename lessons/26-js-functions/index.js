@@ -16,15 +16,15 @@ showUser ("kevin", 29, 3063701356, "simonfraser", "s7h3t2", false);
 
 
 
-function value() {
+
+
+let evenNumber = function () {
     for (let i = 0; i <= 100; i++) {
         if (i % 2 !== 0) continue;
         console.log(i);
     }
     
 }
-
-let evenNumber = value;
 
 evenNumber();
 evenNumber();
@@ -33,13 +33,12 @@ evenNumber();
 evenNumber();
 
 function fibon(num) {
-    var a = 1;
-    console.log(a);
-    var b = 0;
+    let a = 1;
+    let b = 0;
     console.log(b);
-    var c;
+    let c;
 
-    for (i = 0; i < num; i++){
+    for (let c = 0; c < num; c++){
         c = a + b;
         console.log(c);
         a = b + c;
@@ -49,7 +48,7 @@ function fibon(num) {
     }
 }
 
-fibon(12);
+fibon(8);
 
 var showName = showNameFunc;
 
