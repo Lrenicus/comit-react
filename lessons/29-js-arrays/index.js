@@ -40,7 +40,7 @@ let favRecipe = {
 }
 
 console.log(favRecipe.title);
-console.log('serves: ${favRecipe.servings}');
+console.log(`serves: ${favRecipe.servings}`);
 console.log('ingredients:');
 let r;
 for (r of favRecipe.ingredients) {
