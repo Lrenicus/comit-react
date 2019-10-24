@@ -1,11 +1,11 @@
-alert(99 > 89);
+alert('Enter two numbers to see if the first is greater than the second.');
 
-let age = prompt('how old are you?', '' );
-alert(age);
+let numOne = prompt('What is the first number?');
 
-let ageTwo = prompt('how old is your mom?');
-alert(ageTwo);
+let numTwo = prompt('What is the second number?');
 
-alert(confirm('Is that your true age?'));
-
-alert(age < ageTwo);
+if (numOne > numTwo) {
+    alert(`${numOne} is greater than ${numTwo}!`);
+} else {
+    alert(`${numTwo} is greater than ${numOne}!`);
+}
