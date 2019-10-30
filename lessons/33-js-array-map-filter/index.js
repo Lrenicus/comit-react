@@ -52,6 +52,12 @@ const overThirty = people.filter(function(person){
 const twentySaskatoon = people.filter(function(person){
   return person.age < 20 && person.city == "Saskatoon";
 })
+
+let ages = people.map(function(person){
+    return person.age;
+})
+console.log(ages);
+
 console.log(squareNumbers); // 1, 4, 9, 16, 25
 console.log(evenNumbers); // 2, 4, 6, 8, 10
 console.log(oddNumbers); // 1, 3, 5, 7, 9
