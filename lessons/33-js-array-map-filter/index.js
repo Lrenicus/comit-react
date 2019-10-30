@@ -68,7 +68,7 @@ console.log(twentySaskatoon);
 function stripVowels(str) {
     // take string remove vowels return string all vowels removed
     // convert the string into array of infividual characters and use filter to keep only consonants
-    let splitArr = str.split(""); // split the string into an array of ind letters
+    let splitArr = str.toLowerCase().split(""); // split the string into an array of ind letters
     let noVowels = splitArr.filter(function(item){ // strip the vowels from the ind letters
       return item.replace(/[aeiou]/g, ""); // replaces a,e,i,o,u with " "
     })
