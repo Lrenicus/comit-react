@@ -17,10 +17,10 @@ let oddNumbers = moreNumbers.filter(function(item){
 
 
 const people = [
-  {name: "john",
-   age: 24,
-   city: "Saskatoon"
-   
+  {
+    name: "john",
+    age: 24,
+    city: "Saskatoon"
   },
   {
     name: "bobby",
@@ -46,11 +46,11 @@ const people = [
 ];
 
 const overThirty = people.filter(function(person){
-  return person.age >= 30;
+  return person.age > 30;
 })
 
 const twentySaskatoon = people.filter(function(person){
-  return person.age <= 20 && person.city == "Saskatoon";
+  return person.age < 20 && person.city == "Saskatoon";
 })
 console.log(squareNumbers); // 1, 4, 9, 16, 25
 console.log(evenNumbers); // 2, 4, 6, 8, 10
@@ -60,7 +60,7 @@ console.log(twentySaskatoon);
 
 //bonus question
 function stripVowels(str) {
-    //take string remove vowels return string all vowels removed
+    // take string remove vowels return string all vowels removed
     // convert the string into array of infividual characters and use filter to keep only consonants
     let splitArr = str.split(""); // split the string into an array of ind letters
     let noVowels = splitArr.filter(function(item){ // strip the vowels from the ind letters
@@ -68,8 +68,9 @@ function stripVowels(str) {
     })
     let strNoVowels = noVowels.join(""); //joins the array together as a string
     return strNoVowels; //returns string of consonants
-   }
-   console.log(stripVowels("hello")); //results "hll"
-   console.log(stripVowels(" this is so crazy")); //results " ths s s crzy"
-   console.log(stripVowels("hello my name is awesome and yours is?")); //result "hll my nm s wsm nd yrs s?"
+}
+
+console.log(stripVowels("hello")); //results "hll"
+console.log(stripVowels(" this is so crazy")); //results " ths s s crzy"
+console.log(stripVowels("hello my name is awesome and yours is?")); //result "hll my nm s wsm nd yrs s?"
 
